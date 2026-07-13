@@ -1,36 +1,256 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="hi">
 <head>
-<title>Welcome</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pandit Shri Mukesh Chandra Joshi - Vedic pooja, havan, karmkand, janm kundali, muhurat aur astrology consultation ke liye official website.">
+  <title>Pandit Shri Mukesh Chandra Joshi | Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="loader" id="loader">
+    <div class="loader-mark">ॐ</div>
+    <p>शुभ मंगलम्</p>
+  </div>
 
-<h1>Welcome</h1>
+  <header class="site-header" id="siteHeader">
+    <nav class="nav-wrap">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark">ॐ</span>
+        <span>
+          <strong>Pandit Shri Mukesh Chandra Joshi</strong>
+          <small>Official Website</small>
+        </span>
+      </a>
 
-<p>
-Please watch this message first.
-</p>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
 
-<video width="500" controls>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<source src="video.mp4">
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+        <a class="call-pill" href="tel:+918938951326">Call Now</a>
+      </div>
+    </nav>
+  </header>
 
-</video>
+  <main>
+    <section class="hero" id="home">
+      <video class="hero-video" src="hero-video.mp4" autoplay muted loop playsinline poster="panditji.jpg"></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Royal Temple Theme • Vedic Pooja • Jyotish</p>
+        <h1>Pandit Shri Mukesh Chandra Joshi</h1>
+        <p class="hero-subtitle">11+ saal ke anubhav ke saath pooja, havan, karmkand, janm kundali, kundali milan aur shubh muhurat ki paramparik seva.</p>
+        <div class="hero-meta">
+          <span>🔱 Shri narmadeshvar mandir </span>
+          <span>🕉 Sanskrit, Hindi, Hinglish</span>
+        </div>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="tel:+918938951326">Call Now</a>
+          <a class="btn btn-ghost" href="https://wa.me+918938951326?text=Namaste%20Panditji,%20mujhe%20pooja%20booking%20ke%20liye%20jankari%20chahiye." target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div><strong>2500+</strong><span>Pooja Completed</span></div>
+        <div><strong>1800+</strong><span>Satisfied Families</span></div>
+        <div><strong>12</strong><span>States Served</span></div>
+      </div>
+    </section>
 
-<br><br>
+    <section class="section about" id="about">
+      <div class="container two-col">
+        <div class="portrait-wrap reveal">
+          <img src="panditji.jpg" alt="Pandit Shri Mukesh Chandra Joshi">
+          <div class="portrait-note">Vedic Karmkand Visheshagya</div>
+        </div>
+        <div class="section-copy reveal">
+          <p class="eyebrow dark">About Pandit Ji</p>
+          <h3>Guru Parampara, aur sahi vidhi se pooja, Yajna Havan seva, Kundli, vishesh muhurt Visheshagya</h3>
+          <p>Panditji guru parampara se prapt vaidik gyan ke saath griha pravesh, vivah, rudrabhishek, navgrah shanti, pitra dosh shanti, hawan, yajna aur jyotish paramarsh karvate hain.</p>
+          <div class="info-grid">
+            <div><strong>20+ Years</strong><span>Experience</span></div>
+            <div><strong>5000+</strong><span>Rituals & Consultations</span></div>
+            <div><strong>Online/Offline</strong><span>Available</span></div>
+            <div><strong>Samagri Guide</strong><span>Provided</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<a href="BCA2ndSem.pdf">
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Services</p>
+          <h2>Pooja, karmkand aur jyotish seva</h2>
+          <input class="service-search" id="serviceSearch" type="search" placeholder="Service search karein...">
+        </div>
+        <div class="service-grid" id="serviceGrid">
+          <article class="service-card reveal"><span>🏠</span><h3>Griha Pravesh</h3><p>Naye ghar ke liye shubh vidhi, hawan aur vastu shanti.</p></article>
+          <article class="service-card reveal"><span>💍</span><h3>Vivah Sanskar</h3><p>Vedic mantra aur poori parampara ke saath vivah karmkand.</p></article>
+          <article class="service-card reveal"><span>🔥</span><h3>Havan & Yajna</h3><p>Shanti, samriddhi aur grah-dosh nivaran ke liye hawan.</p></article>
+          <article class="service-card reveal"><span>🔱</span><h3>Rudrabhishek</h3><p>Mahadev pujan, abhishek, jap aur sankalp vidhi.</p></article>
+          <article class="service-card reveal"><span>🌙</span><h3>Janm Kundali</h3><p>Birth details ke adhar par kundali aur grah sthiti vishleshan.</p></article>
+          <article class="service-card reveal"><span>🤝</span><h3>Kundali Milan</h3><p>Vivah ke liye guna milan aur grah anukulata margdarshan.</p></article>
+          <article class="service-card reveal"><span>🪔</span><h3>Satyanarayan Katha</h3><p>Parivarik sukh-shanti ke liye katha aur prasad vidhi.</p></article>
+          <article class="service-card reveal"><span>☀</span><h3>Navgrah Shanti</h3><p>Grah dosh, rahu-ketu aur shani shanti ke upay.</p></article>
+          <article class="service-card reveal"><span>👶</span><h3>Mundan & Namkaran</h3><p>Bachchon ke sanskar shubh muhurat mein.</p></article>
+          <article class="service-card reveal"><span>📿</span><h3>Mahamrityunjay Jap</h3><p>Arogya, raksha aur shanti ke liye jap-anushthan.</p></article>
+          <article class="service-card reveal"><span>🏛</span><h3>Temple Pooja</h3><p>Mandir mein ya ghar par vishesh pooja vyavastha.</p></article>
+          <article class="service-card reveal"><span>📹</span><h3>Online Consultation</h3><p>WhatsApp video call par jyotish aur pooja guidance.</p></article>
+        </div>
+      </div>
+    </section>
 
-<button>
+    <section class="section trust-band">
+      <div class="container trust-grid">
+        <div class="trust-item reveal"><strong>Daily Panchang</strong><span>Tithi, vaar, nakshatra aur shubh muhurat guidance.</span></div>
+        <div class="trust-item reveal"><strong>Festival Booking</strong><span>Navratri, Shivratri, Diwali aur Ganesh Chaturthi bookings.</span></div>
+        <div class="trust-item reveal"><strong>Pooja Samagri List</strong><span>Booking ke baad required samagri ki clear list.</span></div>
+      </div>
+    </section>
 
-Continue
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Gallery</p>
+          <h2>Pooja, havan aur mandir moments</h2>
+          <div class="filter-row" id="galleryFilters">
+            <button class="active" data-filter="all">All</button>
+            <button data-filter="havan">Havan</button>
+            <button data-filter="pooja">Pooja</button>
+            <button data-filter="kundali">Kundali</button>
+          </div>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item reveal" data-category="havan"><img src="images/gallery1.jpg" alt="Havan photo"></button>
+          <button class="gallery-item reveal" data-category="pooja"><img src="images/gallery2.jpg" alt="Pooja photo"></button>
+          <button class="gallery-item reveal" data-category="kundali"><img src="images/gallery3.jpg" alt="Kundali consultation"></button>
+          <button class="gallery-item reveal" data-category="havan"><img src="images/gallery4.jpg" alt="Yajna photo"></button>
+          <button class="gallery-item reveal" data-category="pooja"><img src="images/gallery5.jpg" alt="Temple pooja"></button>
+          <button class="gallery-item reveal" data-category="kundali"><img src="images/gallery6.jpg" alt="Astrology guidance"></button>
+        </div>
+      </div>
+    </section>
 
-</button>
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">Reviews</p>
+          <h2>Bhakton ka vishwas</h2>
+        </div>
+        <div class="review-shell reveal">
+          <button class="slider-btn" id="prevReview" aria-label="Previous review">‹</button>
+          <article class="review-card" id="reviewCard">
+            <div class="stars">★★★★★</div>
+            <p id="reviewText">Pooja bahut shanti aur sahi vidhi se sampann hui. Panditji ne har step ka arth bhi samjhaya.</p>
+            <h3 id="reviewName">Amit Kumar</h3>
+            <span id="reviewCity">Delhi • Griha Pravesh</span>
+          </article>
+          <button class="slider-btn" id="nextReview" aria-label="Next review">›</button>
+        </div>
+      </div>
+    </section>
 
-</a>
+    <section class="section booking" id="booking">
+      <div class="container two-col">
+        <div class="section-copy reveal">
+          <p class="eyebrow dark">Booking</p>
+          <h2>Quick booking request bhejein</h2>
+          <p>GitHub Pages static hosting hai, isliye form submit hone par WhatsApp message banega. Aap chahein to baad mein Google Form/Formspree bhi jod sakte hain.</p>
+          <div class="festival-box">
+            <span>Next Festival Focus</span>
+            <strong>Navratri Booking</strong>
+            <p id="countdown">Countdown loading...</p>
+          </div>
+        </div>
+        <form class="booking-form reveal" id="bookingForm">
+          <input type="text" id="name" placeholder="Aapka naam" required>
+          <input type="tel" id="phone" placeholder="Mobile number" required>
+          <input type="text" id="city" placeholder="City">
+          <select id="pooja">
+            <option value="Griha Pravesh">Griha Pravesh</option>
+            <option value="Havan">Havan</option>
+            <option value="Janm Kundali">Janm Kundali</option>
+            <option value="Rudrabhishek">Rudrabhishek</option>
+            <option value="Kundali Milan">Kundali Milan</option>
+            <option value=" Vivah">Vivah</option>
+             <option value="Other">Other</option>  
+          </select>
+          <input type="date" id="date">
+          <textarea id="message" placeholder="Apni requirement likhein"></textarea>
+          <button class="btn btn-primary" type="submit">WhatsApp Par Bhejein</button>
+        </form>
+      </div>
+    </section>
 
+    <section class="section faq" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow dark">FAQ</p>
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal"><button>क्या आप घर आकर पूजा करते हैं?<span>+</span></button><p>Haan, city aur date ke hisaab se ghar, office, shop aur mandir mein pooja karvai ja sakti hai.</p></div>
+          <div class="faq-item reveal"><button>पूजा सामग्री ?<span>+</span></button><p>Booking confirm hone ke baad samagri list di jaati hai. Zarurat par vyavastha mein madad bhi mil sakti hai.</p></div>
+          <div class="faq-item reveal"><button>क्या ऑनलाइन ज्योतिष परामर्श उपलब्ध है?<span>+</span></button><p>Haan, WhatsApp video call ya phone par kundali aur muhurat guidance li ja sakti hai.</p></div>
+          <div class="faq-item reveal"><button>Booking kaise confirm hogi?<span>+</span></button><p>WhatsApp/call par date, samay, sthan aur pooja details confirm hone ke baad booking final hoti hai.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container two-col">
+        <div class="section-copy reveal">
+          <p class="eyebrow dark">Contact</p>
+          <h2>Darshan, pooja aur consultation ke liye sampark karein</h2>
+          <div class="contact-list">
+            <a href="tel:+918938951326">📞 +91 8938951326</a>
+            <a href="https://wa.me/918938951326" target="_blank" rel="noreferrer">💬 WhatsApp Chat</a>
+            <a href="mailto:panditji@example.com">✉ panditji@example.com</a>
+            <span>🔱 Shri narmadeshvar Mandir, chandigarh, panjab/U.P.</span>
+          </div>
+        </div>
+        <iframe class="map reveal" title="Temple location" src="https://www.google.com/maps?q=Haridwar%20Hanuman%20Mandir&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Pandit Shri Mukesh Chandra Joshi</strong>
+        <p>Vedic pooja, havan, karmkand aur jyotish seva.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Booking</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Pandit Shri Mukesh Chandra Joshi. All rights reserved.</p>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/918938951326?text=Namaste%20Panditji,%20mujhe%20pooja%20booking%20karni%20hai." target="_blank" rel="noreferrer" aria-label="WhatsApp">☏</a>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" aria-label="Close gallery">×</button>
+    <img id="lightboxImg" alt="Gallery preview">
+  </div>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
